@@ -1,0 +1,75 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/lucky?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+      username: root
+      password: yswysyydxj
+  #应用的名称，可选
+  application:
+    name: rui-ji-wai-mai
+  devtools:
+    restart:
+      #      热部署启动时排除文件
+      exclude: banner.txt
+      #      设置热部署开关false关闭,true打开
+      enabled: true
+  servlet:
+    multipart:  #文件上传下载限制
+      max-file-size: 10MB        # 设置单个文件最大大小为10MB
+
+  mail:
+    # stmp邮箱
+    host: smtp.qq.com
+    # 发送方
+    username: 3490596334@qq.com
+    password: ohyepvqjhpzedbci
+    #默认的邮件编码为UTF-8
+    default-encoding: UTF-8
+    #其他参数
+    properties:
+      mail:
+        #配置SSL 加密工厂
+        smtp:
+          ssl:
+            #本地测试，先放开ssl
+            enable: false
+            required: false
+          #开启debug模式，这样邮件发送过程的日志会在控制台打印出来，方便排查错误
+#        debug: true
+
+
+
+
+#      max-request-size: 100MB    # 设置多个文件大小为100MB
+
+#mp设置id自增
+mybatis-plus:
+  global-config:
+    db-config:
+      #      雪花算法生成id
+      id-type: assign_id
+  #配置日志控制台输出
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    #在映射实体或者属性时，将数据库中表名和字段名中的下划线去掉，按照驼峰命名法映射
+    map-underscore-to-camel-case: true
+
+#日志设置
+logging:
+  file: #日志每天刷新
+    path: D:\IntelliJ IDEA 2021.1.2\RickLuckyTakeOut\src\main\resources\log
+  logback:
+    rollingpolicy:
+#      file-name-pattern: ruiji_server_log.%d.%i.log
+      max-file-size: 10MB
+
+
+reggie:
+  path: D:\umr\najisa\
+
+
+
