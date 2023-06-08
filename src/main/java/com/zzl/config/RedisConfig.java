@@ -12,12 +12,6 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
 @Configuration
 public class RedisConfig extends CachingConfigurerSupport {
 
-    @Bean
-    public RedisConnectionFactory jedisConnectionFactory() {
-        JedisConnectionFactory factory = new JedisConnectionFactory();
-//        factory.setPassword("123456");
-        return factory;
-    }
 
     @Bean
     public RedisTemplate<String, Object> redisTemplate(RedisConnectionFactory connectionFactory){
@@ -32,22 +26,3 @@ public class RedisConfig extends CachingConfigurerSupport {
     }
 }
 
-//public class RedisConfig extends CachingConfigurerSupport {
-//
-//    @Bean
-//    public RedisTemplate<Object,Object> redisTemplate(RedisConnectionFactory connectionFactory){
-//        RedisTemplate<Object, Object> redisTemplate = new RedisTemplate<>();
-//
-//        //默认的key序列化器为:JdkSerializationRedisSerializer
-//        redisTemplate.setKeySerializer(new StringRedisSerializer());
-//        redisTemplate.setHashKeySerializer(new StringRedisSerializer());
-//
-//        redisTemplate.setConnectionFactory(connectionFactory);
-//        return redisTemplate;
-//    }
-//
-//    @Bean
-//    public RedisConnectionFactory jedisConnectionFactory() {
-//        return new JedisConnectionFactory();
-//    }
-//}

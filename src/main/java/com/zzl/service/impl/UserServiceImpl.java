@@ -27,7 +27,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
     @Value("${spring.mail.username}")
     private String from;
 
-    private String title="用户您好，您的验证码是:";
+    private String title="尊敬的用户";
 
     //发送邮件
     //接收人toMail
@@ -46,7 +46,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
             helper.setSubject(title);
 
             //打开才能使用超链接
-            helper.setText("<h1>"+code+"</h1>",true);
+            helper.setText("<h1>"+"您本次登录的验证码是"+code+"<br>"+"验证码5分钟内有效"+"</h1>",true);
 
 
          /*   //添加附件
