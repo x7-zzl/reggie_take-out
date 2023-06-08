@@ -15,6 +15,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.logging.log4j.util.Strings;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -37,6 +39,8 @@ public class SetMealController {
 
     //新增套餐
     @PostMapping
+    //清除setmealCache下面所有的缓存
+    @CacheEvict(value = "setmealCache",allEntries = true)
     public R<String> save(@RequestBody SetmealDto setmealDto){
         log.info("套餐信息:{}",setmealDto.toString());
         setMealService.saveWithDish(setmealDto);
@@ -99,6 +103,8 @@ public class SetMealController {
 
     //删除套餐和套餐与菜品的联系
     @DeleteMapping
+    //清除setmealCache下面所有的缓存
+    @CacheEvict(value = "setmealCache",allEntries = true)
     public R<String> delete(@RequestParam List<Long> ids){
         log.info("ids:{}",ids);
         setMealService.removeWithDish(ids);
@@ -109,6 +115,8 @@ public class SetMealController {
 
     //启售停售功能
     @PostMapping("/status/{status}")
+    //清除setmealCache下面所有的缓存
+    @CacheEvict(value = "setmealCache",allEntries = true)
     public R<String> updateStatus(@PathVariable("status") Integer status, @RequestParam List<Long> ids) {
 
         setMealService.updateStatus(status, ids);
@@ -118,6 +126,9 @@ public class SetMealController {
 
     //前台套餐展示界面
     @GetMapping("/list")
+    //在方法执行前spring先查看缓存中是否有数据，如果有数据，则直接返回缓存数据；
+    //如果没有数据，调用方法并将方法返回值放到缓存中
+    @Cacheable(value = "setmealCache",key = "#setmeal.categoryId+'_'+#setmeal.status")
     public R<List<Setmeal>>  list(Setmeal setmeal){
         LambdaQueryWrapper<Setmeal> lambdaQueryWrapper = new LambdaQueryWrapper<>();
         lambdaQueryWrapper.eq(setmeal.getCategoryId()!=null,Setmeal::getCategoryId,setmeal.getCategoryId());

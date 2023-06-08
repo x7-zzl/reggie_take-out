@@ -12,9 +12,10 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
 @Configuration
 public class RedisConfig extends CachingConfigurerSupport {
 
-
-    @Bean
+    @SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
+    @Bean()
     public RedisTemplate<String, Object> redisTemplate(RedisConnectionFactory connectionFactory){
+
         RedisTemplate<String, Object> redisTemplate = new RedisTemplate<>();
         redisTemplate.setConnectionFactory(connectionFactory);
         redisTemplate.setKeySerializer(new StringRedisSerializer());
@@ -24,5 +25,7 @@ public class RedisConfig extends CachingConfigurerSupport {
         redisTemplate.afterPropertiesSet();
         return redisTemplate;
     }
+
+
 }
 
