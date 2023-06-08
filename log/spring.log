@@ -1,0 +1,25 @@
+2023-06-08 17:52:01.678  INFO 98992 --- [restartedMain] com.zzl.RickLuckyTakeOutApplication      : Starting RickLuckyTakeOutApplication using Java 11.0.10 on LAPTOP-5PAGT5H0 with PID 98992 (D:\IntelliJ IDEA 2021.1.2\RickLuckyTakeOut\target\classes started by koutoimi in D:\IntelliJ IDEA 2021.1.2\RickLuckyTakeOut)
+2023-06-08 17:52:01.679  INFO 98992 --- [restartedMain] com.zzl.RickLuckyTakeOutApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-06-08 17:52:01.722  INFO 98992 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-08 17:52:01.722  INFO 98992 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-08 17:52:02.530  INFO 98992 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-06-08 17:52:02.533  INFO 98992 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-06-08 17:52:02.576  INFO 98992 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 0 Redis repository interfaces.
+2023-06-08 17:52:03.246  INFO 98992 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-08 17:52:03.247  INFO 98992 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.16] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2023-06-08 17:52:03.247  INFO 98992 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2023-06-08 17:52:03.247  INFO 98992 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2023-06-08 17:52:03.247  INFO 98992 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-06-08 17:52:04.377  INFO 98992 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2023-06-08 17:52:04.387  INFO 98992 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-08 17:52:04.388  INFO 98992 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-06-08 17:52:04.491  INFO 98992 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-08 17:52:04.491  INFO 98992 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2768 ms
+2023-06-08 17:52:04.691  INFO 98992 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-06-08 17:52:04.815  INFO 98992 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-06-08 17:52:06.189  INFO 98992 --- [restartedMain] com.zzl.config.WebMVCConfig              : 扩展消息转换器
+2023-06-08 17:52:06.195  INFO 98992 --- [restartedMain] com.zzl.config.WebMVCConfig              : 开始进行静态资源映射...
+2023-06-08 17:52:06.484  INFO 98992 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-08 17:52:06.537  INFO 98992 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-08 17:52:06.547  INFO 98992 --- [restartedMain] com.zzl.RickLuckyTakeOutApplication      : Started RickLuckyTakeOutApplication in 5.304 seconds (JVM running for 6.642)
+2023-06-08 17:52:06.549  INFO 98992 --- [restartedMain] com.zzl.RickLuckyTakeOutApplication      : 项目启动成功

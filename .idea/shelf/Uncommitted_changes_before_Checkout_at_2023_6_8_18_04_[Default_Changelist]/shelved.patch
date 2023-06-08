@@ -1,0 +1,19 @@
+Index: src/main/resources/application.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>server:\r\n  port: 8080\r\n\r\nspring:\r\n  datasource:\r\n    druid:\r\n      driver-class-name: com.mysql.cj.jdbc.Driver\r\n      url: jdbc:mysql://localhost:3306/lucky?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true\r\n      username: root\r\n      password: yswysyydxj\r\n  #应用的名称，可选\r\n  application:\r\n    name: rui-ji-wai-mai\r\n  devtools:\r\n    restart:\r\n      #      热部署启动时排除文件\r\n      exclude: banner.txt\r\n      #      设置热部署开关false关闭,true打开\r\n      enabled: true\r\n  servlet:\r\n    multipart:  #文件上传下载限制\r\n      max-file-size: 10MB        # 设置单个文件最大大小为10MB\r\n\r\n\r\n  mail:\r\n    # stmp邮箱\r\n    host: smtp.qq.com\r\n    # 发送方\r\n    username: 3490596334@qq.com\r\n    password: ohyepvqjhpzedbci\r\n    #默认的邮件编码为UTF-8\r\n    default-encoding: UTF-8\r\n    #其他参数\r\n    properties:\r\n      mail:\r\n        #配置SSL 加密工厂\r\n        smtp:\r\n          ssl:\r\n            #本地测试，先放开ssl\r\n            enable: false\r\n            required: false\r\n          #开启debug模式，这样邮件发送过程的日志会在控制台打印出来，方便排查错误\r\n          #        debug: true\r\n\r\n#   redis配置\r\n  redis:\r\n    host: 192.168.239.128\r\n    port: 6379\r\n    password: 123456\r\n#    使用0号数据库\r\n    database: 0\r\n    client-type: lettuce\r\n\r\n    #redis连接池配置\r\n    jedis:\r\n      pool:\r\n        max-active: 8 #最大连接数\r\n        max-wait: 1ms  #连接池的最大阻塞等待时间,负值表示没有限制\r\n        max-idle: 4  #连接池的最大空闲连接\r\n        min-idle: 0 #连接池的最小空闲连接\r\n\r\n\r\n#      max-request-size: 100MB    # 设置多个文件大小为100MB\r\n\r\n#mp设置id自增\r\nmybatis-plus:\r\n  global-config:\r\n    db-config:\r\n      #      雪花算法生成id\r\n      id-type: assign_id\r\n  #配置日志控制台输出\r\n  configuration:\r\n    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl\r\n    #在映射实体或者属性时，将数据库中表名和字段名中的下划线去掉，按照驼峰命名法映射\r\n    map-underscore-to-camel-case: true\r\n\r\n#日志设置\r\nlogging:\r\n  file: #日志每天刷新\r\n    path: D:\\IntelliJ IDEA 2021.1.2\\RickLuckyTakeOut\\src\\main\\resources\\log\r\n#    name: ruiji_server_log.%d.%i.log\r\n  logback:\r\n    rollingpolicy:\r\n#      file-name-pattern: ruiji_server_log.%d.%i.log\r\n      max-file-size: 10MB\r\n\r\n\r\n#图片缓存路径名称\r\nreggie:\r\n  path: D:\\umr\\najisa\\\r\n\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/application.yml b/src/main/resources/application.yml
+--- a/src/main/resources/application.yml	(revision af18217075d6f061dfcb2c273bb7a73102fb0251)
++++ b/src/main/resources/application.yml	(date 1686218231192)
+@@ -77,7 +77,7 @@
+ #日志设置
+ logging:
+   file: #日志每天刷新
+-    path: D:\IntelliJ IDEA 2021.1.2\RickLuckyTakeOut\src\main\resources\log
++    path: /log
+ #    name: ruiji_server_log.%d.%i.log
+   logback:
+     rollingpolicy:

@@ -1,0 +1,611 @@
+2023-06-08 15:16:36.219  INFO 97724 --- [restartedMain] com.zzl.RickLuckyTakeOutApplication      : Starting RickLuckyTakeOutApplication using Java 11.0.10 on LAPTOP-5PAGT5H0 with PID 97724 (D:\IntelliJ IDEA 2021.1.2\RickLuckyTakeOut\target\classes started by koutoimi in D:\IntelliJ IDEA 2021.1.2\RickLuckyTakeOut)
+2023-06-08 15:16:36.223  INFO 97724 --- [restartedMain] com.zzl.RickLuckyTakeOutApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-06-08 15:16:36.277  INFO 97724 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-08 15:16:36.278  INFO 97724 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-08 15:16:37.217  INFO 97724 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-06-08 15:16:37.221  INFO 97724 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-06-08 15:16:37.283  INFO 97724 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 0 Redis repository interfaces.
+2023-06-08 15:16:38.023  INFO 97724 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-08 15:16:38.025  INFO 97724 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.16] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2023-06-08 15:16:38.025  INFO 97724 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2023-06-08 15:16:38.025  INFO 97724 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2023-06-08 15:16:38.025  INFO 97724 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-06-08 15:16:39.145  INFO 97724 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2023-06-08 15:16:39.158  INFO 97724 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-08 15:16:39.159  INFO 97724 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-06-08 15:16:39.307  INFO 97724 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-08 15:16:39.308  INFO 97724 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3030 ms
+2023-06-08 15:16:39.525  INFO 97724 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-06-08 15:16:39.670  INFO 97724 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-06-08 15:16:41.471  INFO 97724 --- [restartedMain] com.zzl.config.WebMVCConfig              : 扩展消息转换器
+2023-06-08 15:16:41.477  INFO 97724 --- [restartedMain] com.zzl.config.WebMVCConfig              : 开始进行静态资源映射...
+2023-06-08 15:16:42.027  INFO 97724 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-08 15:16:42.134  INFO 97724 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-08 15:16:42.160  INFO 97724 --- [restartedMain] com.zzl.RickLuckyTakeOutApplication      : Started RickLuckyTakeOutApplication in 6.488 seconds (JVM running for 8.549)
+2023-06-08 15:16:42.167  INFO 97724 --- [restartedMain] com.zzl.RickLuckyTakeOutApplication      : 项目启动成功
+2023-06-08 15:29:30.076  INFO 97724 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-08 15:29:30.077  INFO 97724 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-08 15:29:30.078  INFO 97724 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-06-08 15:29:30.081  INFO 97724 --- [http-nio-8080-exec-2] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/front/api/main.js
+2023-06-08 15:29:30.082  INFO 97724 --- [http-nio-8080-exec-2] com.zzl.filter.LoginCheckFilter          : 本次请求'/front/api/main.js'不需要处理
+2023-06-08 15:29:30.186  INFO 97724 --- [http-nio-8080-exec-3] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/shoppingCart/list
+2023-06-08 15:29:30.186  INFO 97724 --- [http-nio-8080-exec-1] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/category/list
+2023-06-08 15:29:30.571  WARN 97724 --- [http-nio-8080-exec-3] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [380] milliseconds.
+2023-06-08 15:29:30.571  WARN 97724 --- [http-nio-8080-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [380] milliseconds.
+2023-06-08 15:29:30.576  WARN 97724 --- [http-nio-8080-exec-3] com.zzl.filter.LoginCheckFilter          : 用户未登录
+2023-06-08 15:29:30.576  WARN 97724 --- [http-nio-8080-exec-1] com.zzl.filter.LoginCheckFilter          : 用户未登录
+2023-06-08 15:29:30.663  INFO 97724 --- [http-nio-8080-exec-5] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/front/page/login.html
+2023-06-08 15:29:30.664  INFO 97724 --- [http-nio-8080-exec-5] com.zzl.filter.LoginCheckFilter          : 本次请求'/front/page/login.html'不需要处理
+2023-06-08 15:29:30.664  INFO 97724 --- [http-nio-8080-exec-4] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/front/page/login.html
+2023-06-08 15:29:30.664  INFO 97724 --- [http-nio-8080-exec-4] com.zzl.filter.LoginCheckFilter          : 本次请求'/front/page/login.html'不需要处理
+2023-06-08 15:29:32.576  INFO 97724 --- [http-nio-8080-exec-6] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/backend/plugins/axios/axios.min.map
+2023-06-08 15:29:32.577  INFO 97724 --- [http-nio-8080-exec-6] com.zzl.filter.LoginCheckFilter          : 本次请求'/backend/plugins/axios/axios.min.map'不需要处理
+2023-06-08 15:29:49.494  INFO 97724 --- [http-nio-8080-exec-8] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/user/sendMsg
+2023-06-08 15:29:49.494  INFO 97724 --- [http-nio-8080-exec-8] com.zzl.filter.LoginCheckFilter          : 本次请求'/user/sendMsg'不需要处理
+2023-06-08 15:29:49.554  INFO 97724 --- [http-nio-8080-exec-8] com.zzl.controller.UserController        : 验证码:4143
+2023-06-08 15:29:54.814 ERROR 97724 --- [http-nio-8080-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 192.168.239.128:6379] with root cause
+
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.91.Final.jar:4.1.91.Final]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2023-06-08 15:29:57.965  INFO 97724 --- [http-nio-8080-exec-9] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/user/login
+2023-06-08 15:29:57.966  INFO 97724 --- [http-nio-8080-exec-9] com.zzl.filter.LoginCheckFilter          : 本次请求'/user/login'不需要处理
+2023-06-08 15:29:57.980  INFO 97724 --- [http-nio-8080-exec-9] com.zzl.controller.UserController        : {phone=3490596334@qq.com, code=4143}
+2023-06-08 15:30:00.033 ERROR 97724 --- [http-nio-8080-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 192.168.239.128:6379] with root cause
+
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.91.Final.jar:4.1.91.Final]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2023-06-08 15:30:21.775  INFO 81332 --- [restartedMain] com.zzl.RickLuckyTakeOutApplication      : Starting RickLuckyTakeOutApplication using Java 11.0.10 on LAPTOP-5PAGT5H0 with PID 81332 (D:\IntelliJ IDEA 2021.1.2\RickLuckyTakeOut\target\classes started by koutoimi in D:\IntelliJ IDEA 2021.1.2\RickLuckyTakeOut)
+2023-06-08 15:30:21.776  INFO 81332 --- [restartedMain] com.zzl.RickLuckyTakeOutApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-06-08 15:30:21.836  INFO 81332 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-08 15:30:21.837  INFO 81332 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-08 15:30:22.754  INFO 81332 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-06-08 15:30:22.756  INFO 81332 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-06-08 15:30:22.800  INFO 81332 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 0 Redis repository interfaces.
+2023-06-08 15:30:23.470  INFO 81332 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-08 15:30:23.471  INFO 81332 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.16] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2023-06-08 15:30:23.472  INFO 81332 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2023-06-08 15:30:23.472  INFO 81332 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2023-06-08 15:30:23.472  INFO 81332 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-06-08 15:30:24.573  INFO 81332 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2023-06-08 15:30:24.587  INFO 81332 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-08 15:30:24.587  INFO 81332 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-06-08 15:30:24.713  INFO 81332 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-08 15:30:24.714  INFO 81332 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2877 ms
+2023-06-08 15:30:24.894  INFO 81332 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-06-08 15:30:25.024  INFO 81332 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-06-08 15:30:26.489  INFO 81332 --- [restartedMain] com.zzl.config.WebMVCConfig              : 扩展消息转换器
+2023-06-08 15:30:26.494  INFO 81332 --- [restartedMain] com.zzl.config.WebMVCConfig              : 开始进行静态资源映射...
+2023-06-08 15:30:27.044  INFO 81332 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-08 15:30:27.123  INFO 81332 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-08 15:30:27.154  INFO 81332 --- [restartedMain] com.zzl.RickLuckyTakeOutApplication      : Started RickLuckyTakeOutApplication in 6.004 seconds (JVM running for 8.475)
+2023-06-08 15:30:27.161  INFO 81332 --- [restartedMain] com.zzl.RickLuckyTakeOutApplication      : 项目启动成功
+2023-06-08 15:31:29.380  INFO 81332 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-08 15:31:29.381  INFO 81332 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-08 15:31:29.383  INFO 81332 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-06-08 15:31:29.386  INFO 81332 --- [http-nio-8080-exec-2] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/shoppingCart/list
+2023-06-08 15:31:29.386  INFO 81332 --- [http-nio-8080-exec-1] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/category/list
+2023-06-08 15:31:29.880  WARN 81332 --- [http-nio-8080-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [487] milliseconds.
+2023-06-08 15:31:29.880  WARN 81332 --- [http-nio-8080-exec-2] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [487] milliseconds.
+2023-06-08 15:31:29.886  WARN 81332 --- [http-nio-8080-exec-2] com.zzl.filter.LoginCheckFilter          : 用户未登录
+2023-06-08 15:31:29.886  WARN 81332 --- [http-nio-8080-exec-1] com.zzl.filter.LoginCheckFilter          : 用户未登录
+2023-06-08 15:31:33.468  INFO 81332 --- [http-nio-8080-exec-3] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/backend/plugins/axios/axios.min.map
+2023-06-08 15:31:33.469  INFO 81332 --- [http-nio-8080-exec-3] com.zzl.filter.LoginCheckFilter          : 本次请求'/backend/plugins/axios/axios.min.map'不需要处理
+2023-06-08 15:31:41.903  INFO 81332 --- [http-nio-8080-exec-4] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/user/sendMsg
+2023-06-08 15:31:41.904  INFO 81332 --- [http-nio-8080-exec-4] com.zzl.filter.LoginCheckFilter          : 本次请求'/user/sendMsg'不需要处理
+2023-06-08 15:31:41.994  INFO 81332 --- [http-nio-8080-exec-4] com.zzl.controller.UserController        : 验证码:9733
+2023-06-08 15:31:46.315 ERROR 81332 --- [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 192.168.239.128:6379] with root cause
+
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.91.Final.jar:4.1.91.Final]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2023-06-08 15:31:56.858  INFO 81332 --- [http-nio-8080-exec-5] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/user/login
+2023-06-08 15:31:56.858  INFO 81332 --- [http-nio-8080-exec-5] com.zzl.filter.LoginCheckFilter          : 本次请求'/user/login'不需要处理
+2023-06-08 15:31:56.872  INFO 81332 --- [http-nio-8080-exec-5] com.zzl.controller.UserController        : {phone=3490596334@qq.com, code=9733}
+2023-06-08 15:31:58.930 ERROR 81332 --- [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 192.168.239.128:6379] with root cause
+
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.91.Final.jar:4.1.91.Final]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2023-06-08 15:33:20.875  INFO 81332 --- [http-nio-8080-exec-6] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/category/list
+2023-06-08 15:33:20.875  INFO 81332 --- [http-nio-8080-exec-7] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/shoppingCart/list
+2023-06-08 15:33:20.875  WARN 81332 --- [http-nio-8080-exec-6] com.zzl.filter.LoginCheckFilter          : 用户未登录
+2023-06-08 15:33:20.875  WARN 81332 --- [http-nio-8080-exec-7] com.zzl.filter.LoginCheckFilter          : 用户未登录
+2023-06-08 15:33:22.552  INFO 81332 --- [http-nio-8080-exec-8] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/backend/plugins/axios/axios.min.map
+2023-06-08 15:33:22.552  INFO 81332 --- [http-nio-8080-exec-8] com.zzl.filter.LoginCheckFilter          : 本次请求'/backend/plugins/axios/axios.min.map'不需要处理
+2023-06-08 15:33:31.625  INFO 81332 --- [http-nio-8080-exec-9] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/user/sendMsg
+2023-06-08 15:33:31.625  INFO 81332 --- [http-nio-8080-exec-9] com.zzl.filter.LoginCheckFilter          : 本次请求'/user/sendMsg'不需要处理
+2023-06-08 15:33:31.626  INFO 81332 --- [http-nio-8080-exec-9] com.zzl.controller.UserController        : 验证码:9853
+2023-06-08 15:33:33.164 ERROR 81332 --- [http-nio-8080-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 192.168.239.128:6379] with root cause
+
+java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:233) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:223) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358) ~[na:na]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256) ~[netty-buffer-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-buffer-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.91.Final.jar:4.1.91.Final]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2023-06-08 15:33:45.972  INFO 82532 --- [restartedMain] com.zzl.RickLuckyTakeOutApplication      : Starting RickLuckyTakeOutApplication using Java 11.0.10 on LAPTOP-5PAGT5H0 with PID 82532 (D:\IntelliJ IDEA 2021.1.2\RickLuckyTakeOut\target\classes started by koutoimi in D:\IntelliJ IDEA 2021.1.2\RickLuckyTakeOut)
+2023-06-08 15:33:45.974  INFO 82532 --- [restartedMain] com.zzl.RickLuckyTakeOutApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-06-08 15:33:46.055  INFO 82532 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-08 15:33:46.055  INFO 82532 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-08 15:33:47.455  INFO 82532 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-06-08 15:33:47.457  INFO 82532 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-06-08 15:33:47.511  INFO 82532 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 0 Redis repository interfaces.
+2023-06-08 15:33:48.645  INFO 82532 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-08 15:33:48.648  INFO 82532 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.16] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2023-06-08 15:33:48.649  INFO 82532 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2023-06-08 15:33:48.650  INFO 82532 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2023-06-08 15:33:48.650  INFO 82532 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-06-08 15:33:49.789  INFO 82532 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2023-06-08 15:33:49.806  INFO 82532 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-08 15:33:49.807  INFO 82532 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-06-08 15:33:50.011  INFO 82532 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-08 15:33:50.012  INFO 82532 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3956 ms
+2023-06-08 15:33:50.268  INFO 82532 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-06-08 15:33:50.516  INFO 82532 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-06-08 15:33:53.302  INFO 82532 --- [restartedMain] com.zzl.config.WebMVCConfig              : 扩展消息转换器
+2023-06-08 15:33:53.318  INFO 82532 --- [restartedMain] com.zzl.config.WebMVCConfig              : 开始进行静态资源映射...
+2023-06-08 15:33:54.112  INFO 82532 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-08 15:33:54.257  INFO 82532 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-08 15:33:54.288  INFO 82532 --- [restartedMain] com.zzl.RickLuckyTakeOutApplication      : Started RickLuckyTakeOutApplication in 9.296 seconds (JVM running for 11.147)
+2023-06-08 15:33:54.294  INFO 82532 --- [restartedMain] com.zzl.RickLuckyTakeOutApplication      : 项目启动成功
+2023-06-08 15:34:07.642  INFO 82532 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-08 15:34:07.644  INFO 82532 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-08 15:34:07.646  INFO 82532 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-06-08 15:34:07.648  INFO 82532 --- [http-nio-8080-exec-1] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/user/sendMsg
+2023-06-08 15:34:07.649  INFO 82532 --- [http-nio-8080-exec-1] com.zzl.filter.LoginCheckFilter          : 本次请求'/user/sendMsg'不需要处理
+2023-06-08 15:34:08.036  WARN 82532 --- [http-nio-8080-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [322] milliseconds.
+2023-06-08 15:34:08.049  INFO 82532 --- [http-nio-8080-exec-1] com.zzl.controller.UserController        : 验证码:4457
+2023-06-08 15:34:10.408 ERROR 82532 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 192.168.239.128:6379] with root cause
+
+java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:233) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:223) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358) ~[na:na]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256) ~[netty-buffer-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-buffer-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.91.Final.jar:4.1.91.Final]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2023-06-08 15:34:33.966  INFO 77320 --- [restartedMain] com.zzl.RickLuckyTakeOutApplication      : Starting RickLuckyTakeOutApplication using Java 11.0.10 on LAPTOP-5PAGT5H0 with PID 77320 (D:\IntelliJ IDEA 2021.1.2\RickLuckyTakeOut\target\classes started by koutoimi in D:\IntelliJ IDEA 2021.1.2\RickLuckyTakeOut)
+2023-06-08 15:34:33.968  INFO 77320 --- [restartedMain] com.zzl.RickLuckyTakeOutApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-06-08 15:34:34.024  INFO 77320 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-08 15:34:34.025  INFO 77320 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-08 15:34:34.729  INFO 77320 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-06-08 15:34:34.730  INFO 77320 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-06-08 15:34:34.764  INFO 77320 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
+2023-06-08 15:34:35.219  INFO 77320 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-08 15:34:35.220  INFO 77320 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.16] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2023-06-08 15:34:35.220  INFO 77320 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2023-06-08 15:34:35.220  INFO 77320 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2023-06-08 15:34:35.220  INFO 77320 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-06-08 15:34:36.381  INFO 77320 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2023-06-08 15:34:36.394  INFO 77320 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-08 15:34:36.396  INFO 77320 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-06-08 15:34:36.504  INFO 77320 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-08 15:34:36.504  INFO 77320 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2478 ms
+2023-06-08 15:34:36.675  INFO 77320 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-06-08 15:34:36.784  INFO 77320 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-06-08 15:34:38.533  INFO 77320 --- [restartedMain] com.zzl.config.WebMVCConfig              : 扩展消息转换器
+2023-06-08 15:34:38.545  INFO 77320 --- [restartedMain] com.zzl.config.WebMVCConfig              : 开始进行静态资源映射...
+2023-06-08 15:34:38.964  INFO 77320 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-08 15:34:39.019  INFO 77320 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-08 15:34:39.033  INFO 77320 --- [restartedMain] com.zzl.RickLuckyTakeOutApplication      : Started RickLuckyTakeOutApplication in 5.611 seconds (JVM running for 7.643)
+2023-06-08 15:34:39.037  INFO 77320 --- [restartedMain] com.zzl.RickLuckyTakeOutApplication      : 项目启动成功
+2023-06-08 15:38:23.625  INFO 77320 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-08 15:38:23.627  INFO 77320 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-08 15:38:23.629  INFO 77320 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-06-08 15:38:23.633  INFO 77320 --- [http-nio-8080-exec-1] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/user/sendMsg
+2023-06-08 15:38:23.634  INFO 77320 --- [http-nio-8080-exec-1] com.zzl.filter.LoginCheckFilter          : 本次请求'/user/sendMsg'不需要处理
+2023-06-08 15:38:24.384  WARN 77320 --- [http-nio-8080-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [603] milliseconds.
+2023-06-08 15:38:24.413  INFO 77320 --- [http-nio-8080-exec-1] com.zzl.controller.UserController        : 验证码:1885
+2023-06-08 15:38:27.312 ERROR 77320 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 192.168.239.128:6379] with root cause
+
+java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:233) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:223) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358) ~[na:na]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256) ~[netty-buffer-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-buffer-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.91.Final.jar:4.1.91.Final]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2023-06-08 15:38:32.476  INFO 77320 --- [http-nio-8080-exec-2] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/user/login
+2023-06-08 15:38:32.477  INFO 77320 --- [http-nio-8080-exec-2] com.zzl.filter.LoginCheckFilter          : 本次请求'/user/login'不需要处理
+2023-06-08 15:38:32.493  INFO 77320 --- [http-nio-8080-exec-2] com.zzl.controller.UserController        : {phone=3490596334@qq.com, code=1885}
+2023-06-08 15:38:32.503 ERROR 77320 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 192.168.239.128:6379] with root cause
+
+java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:233) ~[na:na]
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:223) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358) ~[na:na]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256) ~[netty-buffer-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-buffer-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.91.Final.jar:4.1.91.Final]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2023-06-08 15:44:44.188  INFO 89824 --- [restartedMain] com.zzl.RickLuckyTakeOutApplication      : Starting RickLuckyTakeOutApplication using Java 11.0.10 on LAPTOP-5PAGT5H0 with PID 89824 (D:\IntelliJ IDEA 2021.1.2\RickLuckyTakeOut\target\classes started by koutoimi in D:\IntelliJ IDEA 2021.1.2\RickLuckyTakeOut)
+2023-06-08 15:44:44.189  INFO 89824 --- [restartedMain] com.zzl.RickLuckyTakeOutApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-06-08 15:44:44.231  INFO 89824 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-08 15:44:44.231  INFO 89824 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-08 15:44:44.911  INFO 89824 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-06-08 15:44:44.914  INFO 89824 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-06-08 15:44:44.945  INFO 89824 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+2023-06-08 15:44:45.498  INFO 89824 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-08 15:44:45.499  INFO 89824 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.16] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2023-06-08 15:44:45.499  INFO 89824 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2023-06-08 15:44:45.499  INFO 89824 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2023-06-08 15:44:45.499  INFO 89824 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-06-08 15:44:46.618  INFO 89824 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2023-06-08 15:44:46.635  INFO 89824 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-08 15:44:46.636  INFO 89824 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-06-08 15:44:46.802  INFO 89824 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-08 15:44:46.803  INFO 89824 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2571 ms
+2023-06-08 15:44:47.030  INFO 89824 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-06-08 15:44:47.193  INFO 89824 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-06-08 15:44:49.098  INFO 89824 --- [restartedMain] com.zzl.config.WebMVCConfig              : 扩展消息转换器
+2023-06-08 15:44:49.108  INFO 89824 --- [restartedMain] com.zzl.config.WebMVCConfig              : 开始进行静态资源映射...
+2023-06-08 15:44:49.585  INFO 89824 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-08 15:44:49.656  INFO 89824 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-08 15:44:49.680  INFO 89824 --- [restartedMain] com.zzl.RickLuckyTakeOutApplication      : Started RickLuckyTakeOutApplication in 5.941 seconds (JVM running for 8.207)
+2023-06-08 15:44:49.685  INFO 89824 --- [restartedMain] com.zzl.RickLuckyTakeOutApplication      : 项目启动成功
+2023-06-08 15:46:08.912  INFO 89824 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-08 15:46:08.914  INFO 89824 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-08 15:46:08.915  INFO 89824 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-06-08 15:46:08.918  INFO 89824 --- [http-nio-8080-exec-1] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/front/page/login.html
+2023-06-08 15:46:08.919  INFO 89824 --- [http-nio-8080-exec-1] com.zzl.filter.LoginCheckFilter          : 本次请求'/front/page/login.html'不需要处理
+2023-06-08 15:46:09.078  INFO 89824 --- [http-nio-8080-exec-2] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/backend/plugins/axios/axios.min.map
+2023-06-08 15:46:09.079  INFO 89824 --- [http-nio-8080-exec-2] com.zzl.filter.LoginCheckFilter          : 本次请求'/backend/plugins/axios/axios.min.map'不需要处理
+2023-06-08 15:46:17.573  INFO 89824 --- [http-nio-8080-exec-4] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/user/sendMsg
+2023-06-08 15:46:17.573  INFO 89824 --- [http-nio-8080-exec-4] com.zzl.filter.LoginCheckFilter          : 本次请求'/user/sendMsg'不需要处理
+2023-06-08 15:46:17.919  WARN 89824 --- [http-nio-8080-exec-4] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [311] milliseconds.
+2023-06-08 15:46:17.933  INFO 89824 --- [http-nio-8080-exec-4] com.zzl.controller.UserController        : 验证码:8264
+2023-06-08 15:46:25.830  INFO 89824 --- [http-nio-8080-exec-6] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/user/login
+2023-06-08 15:46:25.831  INFO 89824 --- [http-nio-8080-exec-6] com.zzl.filter.LoginCheckFilter          : 本次请求'/user/login'不需要处理
+2023-06-08 15:46:25.847  INFO 89824 --- [http-nio-8080-exec-6] com.zzl.controller.UserController        : {phone=3490596334@qq.com, code=8264}
+2023-06-08 15:46:26.430  INFO 89824 --- [http-nio-8080-exec-7] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/category/list
+2023-06-08 15:46:26.431  INFO 89824 --- [http-nio-8080-exec-7] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:46:26.434  INFO 89824 --- [http-nio-8080-exec-8] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/shoppingCart/list
+2023-06-08 15:46:26.434  INFO 89824 --- [http-nio-8080-exec-8] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:46:26.435  INFO 89824 --- [http-nio-8080-exec-8] c.zzl.controller.ShoppingCartController  : 查看购物车:
+2023-06-08 15:46:26.444  INFO 89824 --- [http-nio-8080-exec-9] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/backend/plugins/axios/axios.min.map
+2023-06-08 15:46:26.445  INFO 89824 --- [http-nio-8080-exec-9] com.zzl.filter.LoginCheckFilter          : 本次请求'/backend/plugins/axios/axios.min.map'不需要处理
+2023-06-08 15:46:26.612  INFO 89824 --- [http-nio-8080-exec-10] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/dish/list
+2023-06-08 15:46:26.612  INFO 89824 --- [http-nio-8080-exec-10] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:46:26.743  INFO 89824 --- [http-nio-8080-exec-1] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:46:26.744  INFO 89824 --- [http-nio-8080-exec-2] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:46:26.744  INFO 89824 --- [http-nio-8080-exec-1] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:46:26.744  INFO 89824 --- [http-nio-8080-exec-3] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:46:26.744  INFO 89824 --- [http-nio-8080-exec-2] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:46:26.744  INFO 89824 --- [http-nio-8080-exec-3] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:46:30.502  INFO 89824 --- [http-nio-8080-exec-4] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:46:30.502  WARN 89824 --- [http-nio-8080-exec-4] com.zzl.filter.LoginCheckFilter          : 用户未登录
+2023-06-08 15:46:40.868  INFO 89824 --- [http-nio-8080-exec-7] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/dish/list
+2023-06-08 15:46:40.869  INFO 89824 --- [http-nio-8080-exec-7] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:46:45.667  INFO 89824 --- [http-nio-8080-exec-3] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/dish/list
+2023-06-08 15:46:45.667  INFO 89824 --- [http-nio-8080-exec-3] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:46:46.206  INFO 89824 --- [http-nio-8080-exec-2] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/dish/list
+2023-06-08 15:46:46.207  INFO 89824 --- [http-nio-8080-exec-2] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:46:46.409  INFO 89824 --- [http-nio-8080-exec-1] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/dish/list
+2023-06-08 15:46:46.410  INFO 89824 --- [http-nio-8080-exec-1] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:46:46.667  INFO 89824 --- [http-nio-8080-exec-4] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/dish/list
+2023-06-08 15:46:46.667  INFO 89824 --- [http-nio-8080-exec-4] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:46:48.352  INFO 89824 --- [http-nio-8080-exec-5] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/dish/list
+2023-06-08 15:46:48.352  INFO 89824 --- [http-nio-8080-exec-5] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:46:48.386  INFO 89824 --- [http-nio-8080-exec-9] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:46:48.387  INFO 89824 --- [http-nio-8080-exec-9] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:46:48.388  INFO 89824 --- [http-nio-8080-exec-8] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:46:48.389  INFO 89824 --- [http-nio-8080-exec-8] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:46:48.516  INFO 89824 --- [http-nio-8080-exec-6] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:46:48.517  WARN 89824 --- [http-nio-8080-exec-6] com.zzl.filter.LoginCheckFilter          : 用户未登录
+2023-06-08 15:46:48.527  INFO 89824 --- [http-nio-8080-exec-10] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:46:48.528  WARN 89824 --- [http-nio-8080-exec-10] com.zzl.filter.LoginCheckFilter          : 用户未登录
+2023-06-08 15:46:49.099  INFO 89824 --- [http-nio-8080-exec-2] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/dish/list
+2023-06-08 15:46:49.099  INFO 89824 --- [http-nio-8080-exec-2] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:46:58.452  INFO 89824 --- [http-nio-8080-exec-5] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/dish/list
+2023-06-08 15:46:58.453  INFO 89824 --- [http-nio-8080-exec-5] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:47:07.579  INFO 89824 --- [http-nio-8080-exec-9] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/dish/list
+2023-06-08 15:47:07.579  INFO 89824 --- [http-nio-8080-exec-9] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:47:18.443  INFO 89824 --- [http-nio-8080-exec-7] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/front/index.html
+2023-06-08 15:47:18.443  INFO 89824 --- [http-nio-8080-exec-7] com.zzl.filter.LoginCheckFilter          : 本次请求'/front/index.html'不需要处理
+2023-06-08 15:47:18.653  INFO 89824 --- [http-nio-8080-exec-10] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/category/list
+2023-06-08 15:47:18.653  INFO 89824 --- [http-nio-8080-exec-10] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:47:18.654  INFO 89824 --- [http-nio-8080-exec-3] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/shoppingCart/list
+2023-06-08 15:47:18.655  INFO 89824 --- [http-nio-8080-exec-3] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:47:18.655  INFO 89824 --- [http-nio-8080-exec-3] c.zzl.controller.ShoppingCartController  : 查看购物车:
+2023-06-08 15:47:18.670  INFO 89824 --- [http-nio-8080-exec-2] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/backend/plugins/axios/axios.min.map
+2023-06-08 15:47:18.670  INFO 89824 --- [http-nio-8080-exec-2] com.zzl.filter.LoginCheckFilter          : 本次请求'/backend/plugins/axios/axios.min.map'不需要处理
+2023-06-08 15:47:18.691  INFO 89824 --- [http-nio-8080-exec-4] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/dish/list
+2023-06-08 15:47:18.692  INFO 89824 --- [http-nio-8080-exec-4] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:47:18.706  INFO 89824 --- [http-nio-8080-exec-1] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:47:18.707  INFO 89824 --- [http-nio-8080-exec-1] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:47:18.707  INFO 89824 --- [http-nio-8080-exec-5] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:47:18.707  INFO 89824 --- [http-nio-8080-exec-5] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:47:18.708  INFO 89824 --- [http-nio-8080-exec-8] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:47:18.708  INFO 89824 --- [http-nio-8080-exec-8] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:47:18.806  INFO 89824 --- [http-nio-8080-exec-6] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/front/index.html
+2023-06-08 15:47:18.806  INFO 89824 --- [http-nio-8080-exec-9] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:47:18.806  INFO 89824 --- [http-nio-8080-exec-6] com.zzl.filter.LoginCheckFilter          : 本次请求'/front/index.html'不需要处理
+2023-06-08 15:47:18.806  WARN 89824 --- [http-nio-8080-exec-9] com.zzl.filter.LoginCheckFilter          : 用户未登录
+2023-06-08 15:47:18.970  INFO 89824 --- [http-nio-8080-exec-2] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/category/list
+2023-06-08 15:47:18.970  INFO 89824 --- [http-nio-8080-exec-2] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:47:18.972  INFO 89824 --- [http-nio-8080-exec-3] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/shoppingCart/list
+2023-06-08 15:47:18.973  INFO 89824 --- [http-nio-8080-exec-3] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:47:18.973  INFO 89824 --- [http-nio-8080-exec-3] c.zzl.controller.ShoppingCartController  : 查看购物车:
+2023-06-08 15:47:18.991  INFO 89824 --- [http-nio-8080-exec-10] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/dish/list
+2023-06-08 15:47:18.992  INFO 89824 --- [http-nio-8080-exec-10] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:47:19.008  INFO 89824 --- [http-nio-8080-exec-5] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:47:19.008  INFO 89824 --- [http-nio-8080-exec-5] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:47:19.008  INFO 89824 --- [http-nio-8080-exec-4] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:47:19.008  INFO 89824 --- [http-nio-8080-exec-4] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:47:19.008  INFO 89824 --- [http-nio-8080-exec-8] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:47:19.009  INFO 89824 --- [http-nio-8080-exec-8] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:47:19.048  INFO 89824 --- [http-nio-8080-exec-1] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/backend/plugins/axios/axios.min.map
+2023-06-08 15:47:19.048  INFO 89824 --- [http-nio-8080-exec-1] com.zzl.filter.LoginCheckFilter          : 本次请求'/backend/plugins/axios/axios.min.map'不需要处理
+2023-06-08 15:47:19.131  INFO 89824 --- [http-nio-8080-exec-9] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:47:19.131  WARN 89824 --- [http-nio-8080-exec-9] com.zzl.filter.LoginCheckFilter          : 用户未登录
+2023-06-08 15:47:20.809  INFO 89824 --- [http-nio-8080-exec-6] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/dish/list
+2023-06-08 15:47:20.809  INFO 89824 --- [http-nio-8080-exec-6] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:47:20.821  INFO 89824 --- [http-nio-8080-exec-2] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:47:20.821  INFO 89824 --- [http-nio-8080-exec-2] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:47:20.821  INFO 89824 --- [http-nio-8080-exec-3] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:47:20.821  INFO 89824 --- [http-nio-8080-exec-3] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:47:20.947  INFO 89824 --- [http-nio-8080-exec-10] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:47:20.947  WARN 89824 --- [http-nio-8080-exec-10] com.zzl.filter.LoginCheckFilter          : 用户未登录
+2023-06-08 15:47:20.964  INFO 89824 --- [http-nio-8080-exec-8] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:47:20.965  WARN 89824 --- [http-nio-8080-exec-8] com.zzl.filter.LoginCheckFilter          : 用户未登录
+2023-06-08 15:47:21.055  INFO 89824 --- [http-nio-8080-exec-1] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/dish/list
+2023-06-08 15:47:21.055  INFO 89824 --- [http-nio-8080-exec-1] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:47:21.233  INFO 89824 --- [http-nio-8080-exec-9] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/dish/list
+2023-06-08 15:47:21.233  INFO 89824 --- [http-nio-8080-exec-9] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:47:21.569  INFO 89824 --- [http-nio-8080-exec-7] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/dish/list
+2023-06-08 15:47:21.570  INFO 89824 --- [http-nio-8080-exec-7] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:47:21.747  INFO 89824 --- [http-nio-8080-exec-6] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/dish/list
+2023-06-08 15:47:21.747  INFO 89824 --- [http-nio-8080-exec-6] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:47:21.919  INFO 89824 --- [http-nio-8080-exec-3] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/dish/list
+2023-06-08 15:47:21.919  INFO 89824 --- [http-nio-8080-exec-3] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:47:22.384  INFO 89824 --- [http-nio-8080-exec-2] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/dish/list
+2023-06-08 15:47:22.384  INFO 89824 --- [http-nio-8080-exec-2] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:47:22.427  INFO 89824 --- [http-nio-8080-exec-10] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:47:22.427  INFO 89824 --- [http-nio-8080-exec-5] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:47:22.428  INFO 89824 --- [http-nio-8080-exec-8] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:47:22.428  INFO 89824 --- [http-nio-8080-exec-10] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:47:22.428  INFO 89824 --- [http-nio-8080-exec-5] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:47:22.428  INFO 89824 --- [http-nio-8080-exec-8] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:47:22.634  INFO 89824 --- [http-nio-8080-exec-4] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/dish/list
+2023-06-08 15:47:22.634  INFO 89824 --- [http-nio-8080-exec-4] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:47:22.745  INFO 89824 --- [http-nio-8080-exec-1] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:47:22.745  WARN 89824 --- [http-nio-8080-exec-1] com.zzl.filter.LoginCheckFilter          : 用户未登录
+2023-06-08 15:47:22.807  INFO 89824 --- [http-nio-8080-exec-7] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/dish/list
+2023-06-08 15:47:22.807  INFO 89824 --- [http-nio-8080-exec-7] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:47:22.918  INFO 89824 --- [http-nio-8080-exec-6] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:47:22.919  WARN 89824 --- [http-nio-8080-exec-6] com.zzl.filter.LoginCheckFilter          : 用户未登录
+2023-06-08 15:47:23.480  INFO 89824 --- [http-nio-8080-exec-2] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/setmeal/list
+2023-06-08 15:47:23.481  INFO 89824 --- [http-nio-8080-exec-2] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:47:23.514  INFO 89824 --- [http-nio-8080-exec-5] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:47:23.515  INFO 89824 --- [http-nio-8080-exec-5] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:47:23.658  INFO 89824 --- [http-nio-8080-exec-10] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/setmeal/list
+2023-06-08 15:47:23.658  INFO 89824 --- [http-nio-8080-exec-10] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:47:23.859  INFO 89824 --- [http-nio-8080-exec-9] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/setmeal/list
+2023-06-08 15:47:23.860  INFO 89824 --- [http-nio-8080-exec-9] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:47:23.886  INFO 89824 --- [http-nio-8080-exec-7] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:47:23.886  WARN 89824 --- [http-nio-8080-exec-7] com.zzl.filter.LoginCheckFilter          : 用户未登录
+2023-06-08 15:47:23.971  INFO 89824 --- [http-nio-8080-exec-3] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/setmeal/list
+2023-06-08 15:47:23.971  INFO 89824 --- [http-nio-8080-exec-3] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:47:25.081  INFO 89824 --- [http-nio-8080-exec-2] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/dish/list
+2023-06-08 15:47:25.082  INFO 89824 --- [http-nio-8080-exec-2] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:47:25.094  INFO 89824 --- [http-nio-8080-exec-5] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:47:25.094  INFO 89824 --- [http-nio-8080-exec-5] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:47:25.095  INFO 89824 --- [http-nio-8080-exec-8] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:47:25.095  INFO 89824 --- [http-nio-8080-exec-10] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:47:25.096  INFO 89824 --- [http-nio-8080-exec-8] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:47:25.096  INFO 89824 --- [http-nio-8080-exec-10] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:47:25.196  INFO 89824 --- [http-nio-8080-exec-1] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:47:25.196  WARN 89824 --- [http-nio-8080-exec-1] com.zzl.filter.LoginCheckFilter          : 用户未登录
+2023-06-08 15:47:25.276  INFO 89824 --- [http-nio-8080-exec-9] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/dish/list
+2023-06-08 15:47:25.276  INFO 89824 --- [http-nio-8080-exec-9] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:47:25.477  INFO 89824 --- [http-nio-8080-exec-7] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/dish/list
+2023-06-08 15:47:25.477  INFO 89824 --- [http-nio-8080-exec-7] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:47:35.703  INFO 89824 --- [http-nio-8080-exec-5] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/dish/list
+2023-06-08 15:47:35.703  INFO 89824 --- [http-nio-8080-exec-5] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:47:35.715  INFO 89824 --- [http-nio-8080-exec-8] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:47:35.715  INFO 89824 --- [http-nio-8080-exec-10] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:47:35.716  INFO 89824 --- [http-nio-8080-exec-10] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:47:35.716  INFO 89824 --- [http-nio-8080-exec-8] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:47:35.718  INFO 89824 --- [http-nio-8080-exec-1] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:47:35.718  INFO 89824 --- [http-nio-8080-exec-1] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:47:37.818  INFO 89824 --- [http-nio-8080-exec-4] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/dish/list
+2023-06-08 15:47:37.819  INFO 89824 --- [http-nio-8080-exec-4] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:47:37.831  INFO 89824 --- [http-nio-8080-exec-9] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:47:37.832  INFO 89824 --- [http-nio-8080-exec-9] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:47:37.832  INFO 89824 --- [http-nio-8080-exec-7] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:47:37.832  INFO 89824 --- [http-nio-8080-exec-7] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：1660317034082410498
+2023-06-08 15:47:37.962  INFO 89824 --- [http-nio-8080-exec-3] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:47:37.963  WARN 89824 --- [http-nio-8080-exec-3] com.zzl.filter.LoginCheckFilter          : 用户未登录
+2023-06-08 15:47:57.247  INFO 89824 --- [http-nio-8080-exec-10] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/employee/login
+2023-06-08 15:47:57.247  INFO 89824 --- [http-nio-8080-exec-10] com.zzl.filter.LoginCheckFilter          : 本次请求'/employee/login'不需要处理
+2023-06-08 15:47:57.494  INFO 89824 --- [http-nio-8080-exec-1] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/employee/page
+2023-06-08 15:47:57.495  INFO 89824 --- [http-nio-8080-exec-1] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：77
+2023-06-08 15:47:57.497  INFO 89824 --- [http-nio-8080-exec-1] com.zzl.controller.EmployeeController    : 当前页码=1,页数=2,name=null
+2023-06-08 15:48:17.590  INFO 89824 --- [http-nio-8080-exec-9] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/category/list
+2023-06-08 15:48:17.590  INFO 89824 --- [http-nio-8080-exec-9] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：77
+2023-06-08 15:48:17.590  INFO 89824 --- [http-nio-8080-exec-3] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/shoppingCart/list
+2023-06-08 15:48:17.591  INFO 89824 --- [http-nio-8080-exec-3] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：77
+2023-06-08 15:48:17.591  INFO 89824 --- [http-nio-8080-exec-3] c.zzl.controller.ShoppingCartController  : 查看购物车:
+2023-06-08 15:48:17.623  INFO 89824 --- [http-nio-8080-exec-6] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/dish/list
+2023-06-08 15:48:17.623  INFO 89824 --- [http-nio-8080-exec-6] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：77
+2023-06-08 15:48:17.660  INFO 89824 --- [http-nio-8080-exec-8] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:48:17.661  INFO 89824 --- [http-nio-8080-exec-8] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：77
+2023-06-08 15:48:17.662  INFO 89824 --- [http-nio-8080-exec-2] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:48:17.662  INFO 89824 --- [http-nio-8080-exec-5] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:48:17.662  INFO 89824 --- [http-nio-8080-exec-2] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：77
+2023-06-08 15:48:17.662  INFO 89824 --- [http-nio-8080-exec-5] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：77
+2023-06-08 15:48:20.009  INFO 89824 --- [http-nio-8080-exec-10] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/backend/plugins/axios/axios.min.map
+2023-06-08 15:48:20.009  INFO 89824 --- [http-nio-8080-exec-10] com.zzl.filter.LoginCheckFilter          : 本次请求'/backend/plugins/axios/axios.min.map'不需要处理
+2023-06-08 15:48:21.641  INFO 89824 --- [http-nio-8080-exec-1] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/dish/list
+2023-06-08 15:48:21.642  INFO 89824 --- [http-nio-8080-exec-1] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：77
+2023-06-08 15:48:21.651  INFO 89824 --- [http-nio-8080-exec-7] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:48:21.651  INFO 89824 --- [http-nio-8080-exec-4] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:48:21.651  INFO 89824 --- [http-nio-8080-exec-9] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:48:21.651  INFO 89824 --- [http-nio-8080-exec-7] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：77
+2023-06-08 15:48:21.651  INFO 89824 --- [http-nio-8080-exec-4] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：77
+2023-06-08 15:48:21.651  INFO 89824 --- [http-nio-8080-exec-9] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：77
+2023-06-08 15:48:21.982  INFO 89824 --- [http-nio-8080-exec-3] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:48:21.983  WARN 89824 --- [http-nio-8080-exec-3] com.zzl.filter.LoginCheckFilter          : 用户未登录
+2023-06-08 15:48:32.872  INFO 89824 --- [http-nio-8080-exec-10] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/category/page
+2023-06-08 15:48:32.873  INFO 89824 --- [http-nio-8080-exec-10] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：77
+2023-06-08 15:48:43.913  INFO 89824 --- [http-nio-8080-exec-7] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/dish/page
+2023-06-08 15:48:43.914  INFO 89824 --- [http-nio-8080-exec-7] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：77
+2023-06-08 15:48:44.006  INFO 89824 --- [http-nio-8080-exec-4] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:48:44.006  INFO 89824 --- [http-nio-8080-exec-4] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：77
+2023-06-08 15:48:44.008  INFO 89824 --- [http-nio-8080-exec-3] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:48:44.008  INFO 89824 --- [http-nio-8080-exec-9] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:48:44.008  INFO 89824 --- [http-nio-8080-exec-3] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：77
+2023-06-08 15:48:44.008  INFO 89824 --- [http-nio-8080-exec-9] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：77
+2023-06-08 15:48:44.009  INFO 89824 --- [http-nio-8080-exec-8] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:48:44.009  INFO 89824 --- [http-nio-8080-exec-8] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：77
+2023-06-08 15:48:44.009  INFO 89824 --- [http-nio-8080-exec-5] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:48:44.009  INFO 89824 --- [http-nio-8080-exec-5] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：77
+2023-06-08 15:48:44.009  INFO 89824 --- [http-nio-8080-exec-6] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:48:44.009  INFO 89824 --- [http-nio-8080-exec-6] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：77
+2023-06-08 15:48:44.153  INFO 89824 --- [http-nio-8080-exec-2] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:48:44.154  INFO 89824 --- [http-nio-8080-exec-2] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：77
+2023-06-08 15:48:44.181  INFO 89824 --- [http-nio-8080-exec-10] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:48:44.181  INFO 89824 --- [http-nio-8080-exec-10] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：77
+2023-06-08 15:48:44.247  INFO 89824 --- [http-nio-8080-exec-1] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:48:44.247  INFO 89824 --- [http-nio-8080-exec-7] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:48:44.248  INFO 89824 --- [http-nio-8080-exec-1] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：77
+2023-06-08 15:48:44.248  INFO 89824 --- [http-nio-8080-exec-7] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：77
+2023-06-08 15:48:51.503  INFO 89824 --- [http-nio-8080-exec-3] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/backend/page/food/add.html
+2023-06-08 15:48:51.503  INFO 89824 --- [http-nio-8080-exec-3] com.zzl.filter.LoginCheckFilter          : 本次请求'/backend/page/food/add.html'不需要处理
+2023-06-08 15:48:51.643  INFO 89824 --- [http-nio-8080-exec-5] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/dish/1666459808366399490
+2023-06-08 15:48:51.643  INFO 89824 --- [http-nio-8080-exec-8] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/category/list
+2023-06-08 15:48:51.643  INFO 89824 --- [http-nio-8080-exec-5] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：77
+2023-06-08 15:48:51.643  INFO 89824 --- [http-nio-8080-exec-8] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：77
+2023-06-08 15:48:51.680  INFO 89824 --- [http-nio-8080-exec-4] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:48:51.680  INFO 89824 --- [http-nio-8080-exec-4] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：77
+2023-06-08 15:48:55.393  INFO 89824 --- [http-nio-8080-exec-3] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/dish
+2023-06-08 15:48:55.393  INFO 89824 --- [http-nio-8080-exec-3] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：77
+2023-06-08 15:48:55.453  INFO 89824 --- [http-nio-8080-exec-3] com.zzl.controller.DishController        : DishDTO(flavors=[DishFlavor(id=1666459808475451393, dishId=1666459808366399490, name=甜味, value=["无糖","少糖","半糖","多糖","全糖"], createTime=2023-06-07T22:59:14, updateTime=2023-06-07T22:59:14, createUser=1660317034082410498, updateUser=1660317034082410498, isDeleted=0)], categoryName=null, copies=null)
+2023-06-08 15:48:55.472  INFO 89824 --- [http-nio-8080-exec-3] com.zzl.common.MyMetaObjectHandler       : 公共字段自动填充[update]
+2023-06-08 15:48:55.473  INFO 89824 --- [http-nio-8080-exec-3] com.zzl.common.MyMetaObjectHandler       : 修改->org.apache.ibatis.reflection.MetaObject@19bb908f
+2023-06-08 15:48:55.511  INFO 89824 --- [http-nio-8080-exec-3] com.zzl.common.MyMetaObjectHandler       : 公共字段填充[insert]
+2023-06-08 15:48:55.511  INFO 89824 --- [http-nio-8080-exec-3] com.zzl.common.MyMetaObjectHandler       : 插入->org.apache.ibatis.reflection.MetaObject@576da27
+2023-06-08 15:48:55.633  INFO 89824 --- [http-nio-8080-exec-8] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/dish/page
+2023-06-08 15:48:55.633  INFO 89824 --- [http-nio-8080-exec-8] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：77
+2023-06-08 15:48:55.706  INFO 89824 --- [http-nio-8080-exec-5] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:48:55.706  INFO 89824 --- [http-nio-8080-exec-5] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：77
+2023-06-08 15:48:55.709  INFO 89824 --- [http-nio-8080-exec-4] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:48:55.709  INFO 89824 --- [http-nio-8080-exec-6] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:48:55.709  INFO 89824 --- [http-nio-8080-exec-4] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：77
+2023-06-08 15:48:55.709  INFO 89824 --- [http-nio-8080-exec-9] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:48:55.709  INFO 89824 --- [http-nio-8080-exec-6] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：77
+2023-06-08 15:48:55.709  INFO 89824 --- [http-nio-8080-exec-9] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：77
+2023-06-08 15:48:55.709  INFO 89824 --- [http-nio-8080-exec-2] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:48:55.709  INFO 89824 --- [http-nio-8080-exec-2] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：77
+2023-06-08 15:48:55.709  INFO 89824 --- [http-nio-8080-exec-10] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:48:55.709  INFO 89824 --- [http-nio-8080-exec-10] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：77
+2023-06-08 15:48:55.856  INFO 89824 --- [http-nio-8080-exec-1] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:48:55.857  INFO 89824 --- [http-nio-8080-exec-1] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：77
+2023-06-08 15:48:55.909  INFO 89824 --- [http-nio-8080-exec-7] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:48:55.909  INFO 89824 --- [http-nio-8080-exec-7] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：77
+2023-06-08 15:48:55.947  INFO 89824 --- [http-nio-8080-exec-3] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:48:55.947  INFO 89824 --- [http-nio-8080-exec-3] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：77
+2023-06-08 15:48:55.970  INFO 89824 --- [http-nio-8080-exec-8] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/common/download
+2023-06-08 15:48:55.971  INFO 89824 --- [http-nio-8080-exec-8] com.zzl.filter.LoginCheckFilter          : 用户已登录，用户id为：77
+2023-06-08 16:26:42.743  INFO 89824 --- [http-nio-8080-exec-7] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/dish/list
+2023-06-08 16:26:42.755  WARN 89824 --- [http-nio-8080-exec-7] com.zzl.filter.LoginCheckFilter          : 用户未登录
+2023-06-08 16:26:42.975  INFO 89824 --- [http-nio-8080-exec-3] com.zzl.filter.LoginCheckFilter          : 拦截到请求:/backend/plugins/axios/axios.min.map
+2023-06-08 16:26:42.976  INFO 89824 --- [http-nio-8080-exec-3] com.zzl.filter.LoginCheckFilter          : 本次请求'/backend/plugins/axios/axios.min.map'不需要处理
