@@ -1,9 +1,0 @@
-<changelist name="Uncommitted_changes_before_Checkout_at_2023_6_8_18_04_[Default_Changelist]" date="1686218656812" recycled="true" deleted="true">
-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2023_6_8_18_04_[Default_Changelist]/shelved.patch" />
-  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 2023/6/8 18:04 [Default Changelist]" />
-  <binary>
-    <option name="BEFORE_PATH" value="src/main/resources/log/spring.log.2023-06-07.0.gz" />
-    <option name="AFTER_PATH" />
-    <option name="SHELVED_PATH" />
-  </binary>
-</changelist>
